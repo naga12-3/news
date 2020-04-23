@@ -1,36 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hey F2</title>
-    <meta charset="utf-8">
-</head>
-
-<body>
-    <script>
-        function callDoc(str1) {
-          
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-              var doop = []; 
-              doop = JSON.parse(this.responseText).message;
-              var i;
-              for(i=0;i<doop.length;i++)
-              {
-                console.log(doop[i]);
-                document.getElementById('code').innerHTML += doop[i];
-              }
-            
-              
-            }
-          };
-          xhttp.open("POST", "/", false);
-          xhttp.setRequestHeader('Content-type', "application/x-www-form-urlencoded")
-          xhttp.send('link='+"rishaiittp/news");
-         
-        }
-    </script>
-        <button onclick="callDoc()">OK</button>
-        <p id="code"></p>       
-</body>
-</html>
+<p>
+    
+    Hi
+    
+</p>
